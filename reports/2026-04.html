@@ -3,26 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Stämpelfabriken - Rapport april 2026</title>
+  <meta name="robots" content="noindex, nofollow">
+  <title>Stämpelfabriken — Rapport april 2026 | Cyntora</title>
   <link rel="icon" type="image/svg+xml" href="../assets/cyntora-favicon.svg">
   <link rel="apple-touch-icon" href="../assets/cyntora-favicon.svg">
-  <link rel="stylesheet" href="../assets/cyntora-reports.css">
+  <link rel="stylesheet" href="../assets/cyntora-reports-v2.css?v=2658a3de">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+  <style id="client-theme">:root{ --brass:#BE2C30; --brass-soft:rgba(190, 44, 48, 0.10); --bg-cream:#FFFFFF; --bg-cream-soft:#F5F5F5; --bg-dark:#BE2C30; --bg-dark-soft:#9A1A1F; --ink:#1A1A1A; --ink-on-dark:#FFFFFF; --ink-muted:#5A6478; --ink-muted-dark:rgba(255, 255, 255, 0.78); --border:#E2E5EA; --border-dark:rgba(255, 255, 255, 0.25); --font-display:"Open Sans", -apple-system, sans-serif; --font-body:"Open Sans", -apple-system, sans-serif;  }</style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
-  <script src="../assets/cyntora-charts.js" defer></script>
-  <script src="../assets/cyntora-reports.js" defer></script>
+  <script src="../assets/cyntora-charts.js?v=3039954c" defer></script>
+  <script src="../assets/cyntora-reports.js?v=8b74aa71" defer></script>
 </head>
 <body>
 
 <nav class="report-nav" data-section-nav>
   <div class="report-nav__inner">
-    <div class="report-nav__group">
-      <label for="section-jump">Sektion:</label>
-      <select id="section-jump" data-section-jump>
-        <option value="">Översikt</option>
-      </select>
+    <div class="report-nav__brand">
+      <img src="../assets/cyntora-logo.svg" alt="Cyntora">
+      <div class="divider"></div>
+      <div class="label">Stämpelfabriken</div>
     </div>
-    <div class="report-nav__group">
-      <label for="period">Period:</label>
+    <div class="report-nav__links" data-section-links></div>
+    <div class="report-nav__dropdown" data-section-dropdown-wrap>
+      <label for="section-jump">Sektion</label>
+      <select id="section-jump" data-section-jump></select>
+    </div>
+    <div class="report-nav__period">
+      <label for="period">Period</label>
       <select id="period" data-period-switcher data-current="2026-04" data-index-url="index.json" disabled>
         <option value="2026-04.html" selected>April 2026</option>
       </select>
@@ -31,35 +41,37 @@
 </nav>
 
 
-<section class="page cover">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <h1>Stämpelfabriken - Detaljerad statistik</h1>
-  <p class="month">April 2026</p>
-
-
-  <div class="footer">
-<div class="property">Stämpelfabriken - GA4</div>  </div>
+<section class="cover" id="cover">
+  <div class="cover__top">
+    <img src="../assets/cyntora-logo-white.svg" alt="Cyntora">
+    <div class="meta">
+      April 2026
+· Detaljerad statistik    </div>
+  </div>
+  <div class="cover__center">
+    <div class="cover__eyebrow">Cyntora månadsrapport</div>
+    <h1>Stämpelfabriken</h1>
+      <p class="cover__kicker">April 2026 var en positiv månad för trafiken på stampelfabriken.se: webbplatsen besöktes av 4 295 unika användare, en ökning med +30 % jämfört med april 2025, och antalet sessioner steg med +21 % till 5 789.</p>
+<p class="cover__kicker">Google Ads-kostnaden minskade med -19 % jämfört med förra året, vilket är positivt för effektiviteten, men det spårat konverteringsvärde sjönk med -39 % och ROAS landade på 2,54 - en nivå som vi prioriterar att förbättra under kommande månad. På sökfronten ökade organiska klick med +16 % YoY och medelpositionen förbättrades kraftigt från cirka 30 till 17,5.</p>  </div>
+  <div class="cover__bottom">
+    <div class="col">
+      <div class="label">Period</div>
+      <div class="val">April 2026</div>
+    </div>
+    <div class="col">
+      <div class="label">Datakällor</div>
+      <div class="val">GA4, GSC, Google Ads</div>
+    </div>
+    <div class="col">
+      <div class="label">Levererat av</div>
+      <div class="val">Cyntora</div>
+    </div>
+  </div>
 </section>
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Stämpelfabriken</div>
-    <div>April 2026</div>
-  </div>
-</div><div class="summary-block">
-  <h2>Sammanfattning av månaden</h2>
-  <p>April 2026 var en positiv månad för trafiken på stampelfabriken.se: webbplatsen besöktes av 4 295 unika användare, en ökning med +30 % jämfört med april 2025, och antalet sessioner steg med +21 % till 5 789. Google Ads-kostnaden minskade med -19 % jämfört med förra året, vilket är positivt för effektiviteten, men det spårat konverteringsvärde sjönk med -39 % och ROAS landade på 2,54 - en nivå som vi prioriterar att förbättra under kommande månad. På sökfronten ökade organiska klick med +16 % YoY och medelpositionen förbättrades kraftigt från cirka 30 till 17,5.</p>
-</div></section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Stämpelfabriken</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/ga4.svg" alt="">    <span>Google Analytics 4</span>
   </div>
@@ -150,8 +162,29 @@
     <span class="right">
 <span class="value">00:04:14</span>    </span>
   </div>
-  <div class="chart-wrap">
-    <canvas id="ga4-eng-3" data-cyntora='{"format": "duration", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [194.4, 255.7, 107.0, 268.4, 212.3, 308.4, 234.8, 270.7, 248.7, 272.6, 164.4, 247.2, 214.0, 237.3, 434.9, 258.3, 199.2, 599.6, 182.5, 203.5, 287.9, 301.9, 212.9, 250.3, 230.0, 211.1, 226.0, 235.3, 172.8, 237.1]}, {"color": "#b9d2cf", "label": "April 2025", "values": [257.5, 300.0, 257.4, 241.8, 176.6, 202.2, 312.7, 315.5, 265.8, 268.2, 281.6, 283.5, 207.1, 357.2, 303.2, 362.2, 282.5, 87.3, 115.7, 136.1, 198.5, 237.3, 343.9, 304.9, 215.4, 71.9, 141.7, 328.1, 240.1, 281.5]}]}'></canvas>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-eng-3" data-cyntora='{"format": "duration", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [194.4, 255.7, 107.0, 268.4, 212.2, 308.4, 234.8, 270.7, 248.7, 272.6, 164.4, 247.2, 213.9, 237.3, 434.9, 258.3, 199.2, 599.6, 182.5, 203.5, 287.9, 301.9, 212.9, 250.3, 230.0, 211.1, 226.0, 235.3, 172.8, 237.1]}, {"color": "#b9d2cf", "label": "April 2025", "values": [257.5, 300.0, 257.4, 241.8, 176.6, 202.2, 312.7, 315.6, 265.8, 268.2, 281.6, 283.5, 207.1, 357.2, 303.2, 362.2, 282.5, 87.3, 115.7, 136.1, 198.4, 237.3, 343.9, 304.9, 215.4, 71.9, 141.7, 328.1, 240.1, 281.5]}]}'></canvas>
+  </div>
+</div></div>
+<div class="card-grid"><div class="chart-card">
+  <div class="chart-card__head">
+    <span>New Users</span>
+    <span class="right">
+<span class="value">3 911</span>        <span class="trend trend--up">32%</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-new-users-4" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [141, 136, 41, 32, 39, 39, 129, 251, 202, 163, 72, 110, 169, 176, 180, 183, 141, 61, 108, 144, 197, 152, 171, 151, 87, 81, 146, 167, 130, 112]}, {"color": "#b9d2cf", "label": "April 2025", "values": [228, 118, 126, 119, 56, 79, 112, 97, 108, 92, 72, 40, 56, 96, 113, 100, 87, 52, 63, 62, 76, 122, 102, 123, 88, 44, 68, 145, 159, 153]}]}'></canvas>
+  </div>
+</div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+<span class="value">4 295</span>        <span class="trend trend--up">30%</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-total-users-5" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [186, 180, 53, 40, 48, 49, 170, 295, 243, 219, 88, 134, 209, 219, 238, 228, 183, 72, 122, 194, 258, 201, 216, 209, 101, 94, 184, 213, 184, 140]}, {"color": "#b9d2cf", "label": "April 2025", "values": [279, 168, 175, 168, 68, 89, 161, 149, 156, 131, 116, 54, 65, 134, 153, 127, 121, 61, 70, 71, 89, 155, 154, 156, 133, 52, 79, 187, 206, 192]}]}'></canvas>
   </div>
 </div></div>
 <div class="chart-card">
@@ -163,7 +196,7 @@
 
   <div class="donut-row">
     <div class="chart-wrap chart-wrap--short" style="position: relative;">
-      <canvas id="ga4-donut-4" data-cyntora='{"colors": ["#4285F4", "#34A853", "#FBBC04", "#EA4335", "#AB47BC", "#00ACC1", "#FF7043", "#9E9E9E", "#7E57C2", "#26A69A"], "kind": "donut", "labels": ["Paid Search", "Cross-network", "Organic Search", "Direct", "Referral", "Unassigned", "Organic Social", "Email"], "values": [195.0, 166.0, 44.0, 195.0, 15.0, 2.0, 0.0, 0.0]}'></canvas>
+      <canvas id="ga4-donut-6" data-cyntora='{"colors": ["#4285F4", "#34A853", "#FBBC04", "#EA4335", "#AB47BC", "#00ACC1", "#FF7043", "#9E9E9E", "#7E57C2", "#26A69A"], "kind": "donut", "labels": ["Paid Search", "Cross-network", "Organic Search", "Direct", "Referral", "Unassigned", "Organic Social", "Email"], "values": [195.0, 166.0, 44.0, 195.0, 15.0, 2.0, 0.0, 0.0]}'></canvas>
       <div style="
         position: absolute; top: 50%; left: 50%;
         transform: translate(-50%, -50%); text-align: center;">
@@ -410,20 +443,16 @@
 
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--positive">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Trafiken landade på 4 295 användare (+30,0 % jämfört med samma månad förra året) med 5 789 sessioner (+21,0 % jämfört med samma månad förra året). Strukturella mätvärden: bouncenivån på 32,8 % och engagemangsraten på 67,2 %. GA4 registrerade 617 konverteringar i månaden.</p>
 </div>
 </div>
+  </div>
 </section>
 <section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Stämpelfabriken</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-gsc" data-section-id="gsc" data-section-title="Google Search Console">
+  <div class="wrap">
+    <div class="section" id="section-gsc" data-section-id="gsc" data-section-title="Google Search Console">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/gsc.svg" alt="">    <span>Google Search Console</span>
   </div>
@@ -455,13 +484,13 @@
     </span>
   </div>
   <div class="chart-wrap">
-    <canvas id="gsc-imp-5" data-cyntora='{"kind": "line", "labels": ["04-01", "04-02", "04-03", "04-04", "04-05", "04-06", "04-07", "04-08", "04-09", "04-10", "04-11", "04-12", "04-13", "04-14", "04-15", "04-16", "04-17", "04-18", "04-19", "04-20", "04-21", "04-22", "04-23", "04-24", "04-25", "04-26", "04-27", "04-28", "04-29", "04-30"], "legend": true, "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [2857, 2808, 2370, 2367, 2714, 2971, 3558, 3494, 3016, 3408, 2599, 2734, 3563, 3390, 3652, 3498, 3586, 2750, 3155, 4042, 3588, 3532, 3588, 3507, 2773, 2961, 3938, 4991, 3378, 3106]}, {"color": "#b9d2cf", "label": "April 2025", "values": [4233, 4168, 3827, 3628, 3492, 3627, 3995, 4056, 3848, 3919, 3706, 3428, 3637, 4092, 3975, 3619, 3723, 3372, 3686, 4012, 3773, 4444, 4851, 4296, 4306, 3756, 3573, 4337, 4058, 3671]}]}'></canvas>
+    <canvas id="gsc-imp-7" data-cyntora='{"kind": "line", "labels": ["04-01", "04-02", "04-03", "04-04", "04-05", "04-06", "04-07", "04-08", "04-09", "04-10", "04-11", "04-12", "04-13", "04-14", "04-15", "04-16", "04-17", "04-18", "04-19", "04-20", "04-21", "04-22", "04-23", "04-24", "04-25", "04-26", "04-27", "04-28", "04-29", "04-30"], "legend": true, "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [2857, 2808, 2370, 2367, 2714, 2971, 3558, 3494, 3016, 3408, 2599, 2734, 3563, 3390, 3652, 3498, 3586, 2750, 3155, 4042, 3588, 3532, 3588, 3507, 2773, 2961, 3938, 4991, 3378, 3106]}, {"color": "#b9d2cf", "label": "April 2025", "values": [4233, 4168, 3827, 3628, 3492, 3627, 3995, 4056, 3848, 3919, 3706, 3428, 3637, 4092, 3975, 3619, 3723, 3372, 3686, 4012, 3773, 4444, 4851, 4296, 4306, 3756, 3573, 4337, 4058, 3671]}]}'></canvas>
   </div>
 </div>
 
 <div class="band">Keywords</div>
 <div class="data-table-wrap">
-<div class="head">Showing 10 of 25 Rows</div>  <table class="data-table">
+<div class="head">Showing 10 of 18 Rows</div>  <table class="data-table">
     <thead>
       <tr>
         <th>KEYWORD</th>
@@ -544,21 +573,6 @@
           </td>
       </tr>
       <tr>
-        <td>un3480</td>
-          <td>
-            3
-          </td>
-          <td>
-            184
-          </td>
-          <td>
-            3.07
-          </td>
-          <td>
-            1.63%
-          </td>
-      </tr>
-      <tr>
         <td>skåneflagga</td>
           <td>
             2
@@ -589,33 +603,48 @@
           </td>
       </tr>
       <tr>
-        <td>nyckeltag</td>
+        <td>militärklämma</td>
           <td>
-            3
+            9
           </td>
           <td>
-            96
+            90
           </td>
           <td>
-            11.10
+            4.16
           </td>
           <td>
-            3.12%
+            10.00%
           </td>
       </tr>
       <tr>
-        <td>tryckeri linköping</td>
+        <td>vimpelskydd</td>
           <td>
-            3
+            4
           </td>
           <td>
-            92
+            89
           </td>
           <td>
-            7.02
+            6.13
           </td>
           <td>
-            3.26%
+            4.49%
+          </td>
+      </tr>
+      <tr>
+        <td>äggstämpel</td>
+          <td>
+            6
+          </td>
+          <td>
+            72
+          </td>
+          <td>
+            2.19
+          </td>
+          <td>
+            8.33%
           </td>
       </tr>
     </tbody>
@@ -623,32 +652,28 @@
 </div>
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--positive">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Sökresultaten gav 1 025 klick (+15,7 % jämfört med samma månad förra året) på 97 894 visningar (-16,4 % jämfört med samma månad förra året). Genomsnittspositionen i Google Sök ligger på 17,5 under perioden.</p>
 </div>
 </div>
-</section>
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Stämpelfabriken</div>
-    <div>April 2026</div>
   </div>
-</div>  <div class="section" id="section-google_ads" data-section-id="google_ads" data-section-title="Google Ads">
+</section>
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-google_ads" data-section-id="google_ads" data-section-title="Google Ads">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/google-ads.svg" alt="">    <span>Google Ads</span>
   </div>
 
 
-    <div class="band">SEM</div><div class="source-attr">Spårat konverteringsvärde rapporteras av Google Ads och kan överlappa med faktiska intäkter i WooCommerce/Shopify-sektionen. Använd Konverteringar och Kostnad som primära indikatorer.</div>
+    <div class="band">SEM</div><div class="source-attr">Spårat konverteringsvärde är baserat på konverteringshändelser konfigurerade i Google Ads-kontot. Använd Konverteringar och Kostnad som primära indikatorer.</div>
 <div class="card-grid"><div class="card">
   <div class="card__head">
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Konverteringar
     </div>
-      <span class="trend trend--down">20%</span>
+      <span class="trend trend--up">75%</span>
   </div>
     <div class="card__value card__value--big">95</div>
 </div><div class="card">
@@ -656,7 +681,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Spårat konv.värde
     </div>
-      <span class="trend trend--down">39%</span>
+      <span class="trend trend--up">17%</span>
   </div>
     <div class="card__value card__value--big">85 K kr</div>
 </div><div class="card">
@@ -664,7 +689,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Spårad ROAS
     </div>
-      <span class="trend trend--down">24%</span>
+      <span class="trend trend--down">42%</span>
   </div>
     <div class="card__value card__value--big">2.54</div>
 </div><div class="card">
@@ -672,7 +697,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Kostnad
     </div>
-      <span class="trend trend--down">19%</span>
+      <span class="trend trend--up">101%</span>
   </div>
     <div class="card__value card__value--big">33 K kr</div>
 </div><div class="card">
@@ -680,7 +705,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Exponeringar
     </div>
-      <span class="trend trend--up">2%</span>
+      <span class="trend trend--up">141%</span>
   </div>
     <div class="card__value card__value--big">132 041</div>
 </div><div class="card">
@@ -688,7 +713,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Klick
     </div>
-      <span class="trend trend--down">1%</span>
+      <span class="trend trend--up">161%</span>
   </div>
     <div class="card__value card__value--big">2 609</div>
 </div><div class="card">
@@ -696,7 +721,7 @@
     <div class="label">
 <img src="../assets/icons/google-ads.svg" alt="">      Klickfrekvens
     </div>
-      <span class="trend trend--down">2%</span>
+      <span class="trend trend--up">8%</span>
   </div>
     <div class="card__value card__value--big">1.98%</div>
 </div></div>
@@ -707,7 +732,7 @@
     </span>
   </div>
   <div class="chart-wrap">
-    <canvas id="ads-spend-6" data-cyntora='{"currency": "SEK", "dual_axis": true, "format": "currency", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "currency": "SEK", "format": "currency", "label": "Kostnad", "values": [1544.39, 1222.02, 583.19, 152.45, 343.03, 500.62, 1397.25, 1884.33, 2074.32, 1329.85, 336.77, 1055.06, 1550.31, 1418.02, 1645.92, 1456.2, 1041.34, 664.3, 443.22, 1550.41, 1396.23, 1276.01, 1590.98, 1265.1, 387.57, 280.07, 1346.69, 1662.95, 1012.42, 909.91]}, {"color": "#b9d2cf", "currency": "SEK", "format": "currency", "label": "Sp\u00e5rat konv.v\u00e4rde", "values": [3325.0, 3814.0, 0.0, 0.0, 0.0, 10.78, 1704.0, 4366.34, 13193.91, 5156.35, 0.0, 465.0, 1757.0, 5291.54, 8599.64, 574.0, 2944.0, 1108.0, 258.0, 1148.0, 3539.0, 6590.0, 4339.0, 1445.0, 1055.0, 0.0, 1260.0, 8106.0, 2199.02, 2439.37]}]}'></canvas>
+    <canvas id="ads-spend-8" data-cyntora='{"currency": "SEK", "dual_axis": true, "format": "currency", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "currency": "SEK", "format": "currency", "label": "Kostnad", "values": [1544.39, 1222.02, 583.19, 152.45, 343.03, 500.62, 1397.25, 1884.33, 2074.32, 1329.85, 336.77, 1055.06, 1550.31, 1418.02, 1645.92, 1456.2, 1041.34, 664.3, 443.22, 1550.41, 1396.23, 1276.01, 1590.98, 1265.1, 387.57, 280.07, 1346.69, 1662.95, 1012.42, 909.91]}, {"color": "#b9d2cf", "currency": "SEK", "format": "currency", "label": "Sp\u00e5rat konv.v\u00e4rde", "values": [3325.0, 3814.0, 0.0, 0.0, 0.0, 10.78, 1704.0, 4366.34, 13193.91, 5156.35, 0.0, 465.0, 1757.0, 5291.54, 8599.64, 574.0, 2944.0, 1108.0, 258.0, 1148.0, 3539.0, 6590.0, 4339.0, 1445.0, 1055.0, 0.0, 1260.0, 8106.0, 2199.02, 2439.37]}]}'></canvas>
   </div>
 </div>
 <div class="band">Top Campaigns</div>
@@ -829,37 +854,28 @@
 </div>
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--positive">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Annonsbudgeten landade på 33 321 SEK (-19,3 % jämfört med samma månad förra året) och drev 2 609 klick (-0,6 % jämfört med samma månad förra året) till en CTR om 2,0 %. Spårade konverteringar: 94,7 (-20,4 % jämfört med samma månad förra året) till ett spårat konverteringsvärde om 84 688 SEK (-38,6 % jämfört med samma månad förra året), ROAS 2,54 (-23,8 % jämfört med samma månad förra året). Det spårade konverteringsvärdet kan överlappa med commerce-blockets faktiska försäljning, så de två siffrorna kan inte summeras.</p>
 </div>
 </div>
+  </div>
 </section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Stämpelfabriken</div>
-    <div>April 2026</div>
+<section class="page page--dark" id="section-next-steps" data-section-id="next-steps" data-section-title="Vad vi gör härnäst">
+  <div class="wrap">
+    <div class="eyebrow">Vad händer härnäst</div>
+    <div class="next-steps">
+      <h2>Vad vi gör härnäst</h2>
+      <ul>
+<li>Vi kommer att analysera vad som driver minskningen i spårat konverteringsvärde i Google Ads och granska konverteringsåtgärdernas konfiguration för att säkerställa att rätt transaktioner räknas.</li><li>Vi kommer att justera budgetfördelningen mellan PMAX-kampanjerna baserat på aprilresultaten för att maximera ROAS inför maj.</li><li>Vi kommer att granska de sidor som tar emot mest betald trafik och stärka uppmaningen till handling för att öka konverteringsgraden.</li><li>Vi kommer att fortsätta arbeta med sidoptimering och intern länkstruktur för att ytterligare förbättra medelpositionen i organisk sök, med fokus på sökfraser där vi nu hamnar på sida 2.</li><li>Vi kommer att följa upp divergensen mellan ökad trafik och minskade key events i GA4 för att avgöra om det rör sig om en tracking-förändring eller ett reellt konverteringsbortfall.</li>      </ul>
+    </div>
+    <div class="next-steps next-steps--external">
+      <h2>Detta behöver vi från er</h2>
+      <ul>
+<li>Verifiera att e-commerce-events fortfarande firar korrekt - konv-värdet sjönk -39 % YoY trots att trafiken steg +30 %.</li>      </ul>
+    </div>
   </div>
-</div><div class="next-steps">
-  <h2>Vad vi gör härnäst</h2>
-  <ul>
-      <li>Vi kommer att analysera vad som driver minskningen i spårat konverteringsvärde i Google Ads och granska konverteringsåtgärdernas konfiguration för att säkerställa att rätt transaktioner räknas.</li>
-      <li>Vi kommer att justera budgetfördelningen mellan PMAX-kampanjerna baserat på aprilresultaten för att maximera ROAS inför maj.</li>
-      <li>Vi kommer att granska de sidor som tar emot mest betald trafik och stärka uppmaningen till handling för att öka konverteringsgraden.</li>
-      <li>Vi kommer att fortsätta arbeta med sidoptimering och intern länkstruktur för att ytterligare förbättra medelpositionen i organisk sök, med fokus på sökfraser där vi nu hamnar på sida 2.</li>
-      <li>Vi kommer att följa upp divergensen mellan ökad trafik och minskade key events i GA4 för att avgöra om det rör sig om en tracking-förändring eller ett reellt konverteringsbortfall.</li>
-  </ul>
-</div>
-
-<div class="next-steps next-steps--external">
-  <h2>Detta behöver vi från er</h2>
-  <ul>
-      <li>Verifiera att e-commerce-events fortfarande firar korrekt - konv-värdet sjönk -39 % YoY trots att trafiken steg +30 %.</li>
-  </ul>
-</div>
 </section>
 
 
