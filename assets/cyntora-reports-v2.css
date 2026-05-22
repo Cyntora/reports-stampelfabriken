@@ -225,7 +225,10 @@ section.page--dark .eyebrow { color: var(--ink-muted-dark); }
 }
 .cover h1 {
   font-family: var(--font-cover);
-  color: var(--ink-on-dark);
+  /* --cover-title lets a brand color the cover + next-steps headings
+     (e.g. Helens för Körkort's yellow on the near-black band). Falls
+     back to --ink-on-dark when the brand doesn't set it. */
+  color: var(--cover-title, var(--ink-on-dark));
   font-size: clamp(36px, 8vw, 112px);
   font-weight: 400; line-height: 0.98;
   letter-spacing: -0.025em;
@@ -553,6 +556,7 @@ section.page--dark .unavailable { background: rgba(255, 255, 255, 0.05); border-
 .next-steps { padding-top: 16px; }
 .next-steps h2 {
   font-family: var(--font-display);
+  color: var(--cover-title, var(--ink-on-dark));
   font-size: clamp(28px, 3.2vw, 42px);
   font-weight: 400; letter-spacing: -0.015em;
   margin-bottom: 24px;
