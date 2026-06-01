@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Stämpelfabriken — Rapport maj 2026 | Cyntora</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/cyntora-favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/cyntora-favicon.svg">
+  <link rel="stylesheet" href="../assets/cyntora-reports-v2.css?v=71e0812c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+  <style id="client-theme">:root{ --brass:#BE2C30; --brass-soft:rgba(190, 44, 48, 0.10); --bg-cream:#FFFFFF; --bg-cream-soft:#F5F5F5; --bg-dark:#BE2C30; --bg-dark-soft:#9A1A1F; --ink:#1A1A1A; --ink-on-dark:#FFFFFF; --ink-muted:#5A6478; --ink-muted-dark:rgba(255, 255, 255, 0.78); --border:#E2E5EA; --border-dark:rgba(255, 255, 255, 0.25); --font-display:"Open Sans", -apple-system, sans-serif; --font-body:"Open Sans", -apple-system, sans-serif;  }</style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="../assets/cyntora-charts.js?v=3039954c" defer></script>
+  <script src="../assets/cyntora-reports.js?v=8b74aa71" defer></script>
+</head>
+<body>
+
+<nav class="report-nav" data-section-nav>
+  <div class="report-nav__inner">
+    <div class="report-nav__brand">
+      <img src="../assets/cyntora-logo.svg" alt="Cyntora">
+      <div class="divider"></div>
+      <div class="label">Stämpelfabriken</div>
+    </div>
+    <div class="report-nav__links" data-section-links></div>
+    <div class="report-nav__dropdown" data-section-dropdown-wrap>
+      <label for="section-jump">Sektion</label>
+      <select id="section-jump" data-section-jump></select>
+    </div>
+    <div class="report-nav__period">
+      <label for="period">Period</label>
+      <select id="period" data-period-switcher data-current="2026-05" data-index-url="index.json" disabled>
+        <option value="2026-05.html" selected>Maj 2026</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+
+<section class="cover" id="cover">
+  <div class="cover__top">
+    <img src="../assets/cyntora-logo-white.svg" alt="Cyntora">
+    <div class="meta">
+      Maj 2026
+· Detaljerad statistik    </div>
+  </div>
+  <div class="cover__center">
+    <div class="cover__eyebrow">Cyntora månadsrapport</div>
+    <h1>Stämpelfabriken</h1>
+      <p class="cover__kicker">Maj 2026 var en stark månad för Stämpelfabriken med tydliga förbättringar inom samtliga kanaler. Webbplatstrafiken ökade till 4 278 användare, vilket är +19,5 % jämfört med maj 2025, och antalet sessioner steg med +22,6 % till 5 842.</p>
+<p class="cover__kicker">Google Ads levererade ett spårat konverteringsvärde om 69 192 SEK med en ROAS på 2,61 - en förbättring med +68,5 % jämfört med samma period förra året, trots att kostnaden sänktes med 36,5 %. Den organiska synligheten stärktes påtagligt: antalet klick via Google Search Console ökade med +32,4 % till 1 063, och den genomsnittliga sökposition förbättrades från 29,4 till 18,4.</p>  </div>
+  <div class="cover__bottom">
+    <div class="col">
+      <div class="label">Period</div>
+      <div class="val">Maj 2026</div>
+    </div>
+    <div class="col">
+      <div class="label">Datakällor</div>
+      <div class="val">GA4, GSC, Google Ads</div>
+    </div>
+    <div class="col">
+      <div class="label">Levererat av</div>
+      <div class="val">Cyntora</div>
+    </div>
+  </div>
+</section>
+
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
+  <div class="section-title">
+<img class="section-title__icon" src="../assets/icons/ga4.svg" alt="">    <span>Google Analytics 4</span>
+  </div>
+
+
+    <div class="band">Overview</div>
+<div class="card-grid card-grid--asym"><div class="card card--icon"><img src="../assets/icons/ga4.svg" alt="GA4"></div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+<span class="value">4 278</span>        <span class="trend trend--up">+20% YoY</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-users-1" data-cyntora='{"kind": "sparkline", "labels": ["1 May", "2 May", "3 May", "4 May", "5 May", "6 May", "7 May", "8 May", "9 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [90, 91, 112, 201, 200, 208, 195, 175, 76, 110, 193, 271, 206, 103, 127, 103, 118, 200, 192, 188, 199, 155, 63, 104, 217, 270, 202, 191, 192, 98, 116]}, {"color": "#b9d2cf", "label": "April 2025", "values": [92, 155, 97, 101, 214, 225, 207, 185, 151, 64, 82, 181, 292, 197, 184, 138, 76, 64, 134, 153, 154, 144, 110, 55, 78, 127, 146, 120, 56, 88]}]}'></canvas>
+  </div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/ga4.svg" alt="">      Bounce Rate
+    </div>
+      <span class="trend trend--up">+17% YoY</span>
+  </div>
+    <div class="card__value card__value--big">37.98%</div>
+</div></div>
+<div class="card-grid"><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+    </span>
+  </div>
+
+  <div class="donut-row">
+    <div class="chart-wrap chart-wrap--short" style="position: relative;">
+      <canvas id="ga4-donut-2" data-cyntora='{"colors": ["#4285F4", "#34A853", "#FBBC04", "#EA4335", "#AB47BC", "#00ACC1", "#FF7043", "#9E9E9E", "#7E57C2", "#26A69A"], "kind": "donut", "labels": ["Paid Search", "Cross-network", "Organic Search", "Direct", "Unassigned", "Referral", "Organic Social"], "values": [1608.0, 1341.0, 842.0, 479.0, 54.0, 37.0, 7.0]}'></canvas>
+      <div style="
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%); text-align: center;">
+        <div style="font-size: 18px; font-weight: 700;">4 278</div>
+<div style="font-size: 10px; color: #9a9a9a;">Total Users</div>      </div>
+    </div>
+    <div class="legend">
+      <div class="row">
+        <span class="swatch" style="background: #4285F4;"></span>
+        <span class="name">Paid Search</span>
+        <span class="value">1 608</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #34A853;"></span>
+        <span class="name">Cross-network</span>
+        <span class="value">1 341</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #FBBC04;"></span>
+        <span class="name">Organic Search</span>
+        <span class="value">842</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #EA4335;"></span>
+        <span class="name">Direct</span>
+        <span class="value">479</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #AB47BC;"></span>
+        <span class="name">Unassigned</span>
+        <span class="value">54</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #00ACC1;"></span>
+        <span class="name">Referral</span>
+        <span class="value">37</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #FF7043;"></span>
+        <span class="name">Organic Social</span>
+        <span class="value">7</span>
+      </div>
+    </div>
+  </div>
+</div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Average Engagement Time Per Session</span>
+    <span class="right">
+<span class="value">00:04:06</span>    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-eng-3" data-cyntora='{"format": "duration", "kind": "line", "labels": ["1 May", "2 May", "3 May", "4 May", "5 May", "6 May", "7 May", "8 May", "9 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [93.0, 97.0, 124.2, 182.2, 184.2, 267.2, 235.3, 274.6, 132.3, 160.3, 226.1, 217.4, 237.6, 1697.1, 130.0, 174.1, 114.7, 234.7, 242.4, 226.1, 198.7, 259.8, 107.2, 138.0, 288.4, 245.7, 245.0, 208.8, 330.0, 145.7, 135.6]}, {"color": "#b9d2cf", "label": "April 2025", "values": [200.3, 311.5, 107.0, 159.0, 223.4, 223.1, 245.1, 226.3, 575.2, 189.3, 183.8, 234.0, 235.1, 347.5, 209.8, 227.1, 123.6, 146.4, 185.2, 300.6, 285.0, 251.8, 338.7, 233.6, 199.6, 267.9, 263.9, 305.7, 239.4, 168.7, 155.2]}]}'></canvas>
+  </div>
+</div></div>
+<div class="card-grid"><div class="chart-card">
+  <div class="chart-card__head">
+    <span>New Users</span>
+    <span class="right">
+<span class="value">3 932</span>        <span class="trend trend--up">+21% YoY</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-new-users-4" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 May", "2 May", "3 May", "4 May", "5 May", "6 May", "7 May", "8 May", "9 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"], "series": [{"color": "#1f4e4a", "label": "Maj 2026", "values": [77, 79, 92, 165, 157, 169, 161, 127, 66, 87, 152, 215, 157, 88, 103, 87, 94, 153, 147, 151, 145, 115, 50, 96, 161, 209, 159, 141, 149, 86, 94]}, {"color": "#b9d2cf", "label": "Maj 2025", "values": [82, 123, 85, 85, 166, 175, 166, 143, 117, 58, 72, 145, 234, 151, 139, 111, 65, 55, 98, 110, 115, 108, 84, 48, 67, 101, 101, 89, 48, 75, 43]}]}'></canvas>
+  </div>
+</div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+<span class="value">4 278</span>        <span class="trend trend--up">+20% YoY</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-total-users-5" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 May", "2 May", "3 May", "4 May", "5 May", "6 May", "7 May", "8 May", "9 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"], "series": [{"color": "#1f4e4a", "label": "Maj 2026", "values": [90, 91, 112, 201, 200, 208, 195, 175, 76, 110, 193, 271, 206, 103, 127, 103, 118, 200, 192, 188, 199, 155, 63, 104, 217, 270, 202, 191, 192, 98, 116]}, {"color": "#b9d2cf", "label": "Maj 2025", "values": [92, 155, 97, 101, 214, 225, 207, 185, 151, 64, 82, 181, 292, 197, 184, 138, 76, 64, 134, 153, 154, 144, 110, 55, 78, 127, 146, 120, 56, 88, 53]}]}'></canvas>
+  </div>
+</div></div>
+<div class="chart-card">
+  <div class="chart-card__head">
+    <span>Conversions</span>
+    <span class="right">
+    </span>
+  </div>
+
+  <div class="donut-row">
+    <div class="chart-wrap chart-wrap--short" style="position: relative;">
+      <canvas id="ga4-donut-6" data-cyntora='{"colors": ["#4285F4", "#34A853", "#FBBC04", "#EA4335", "#AB47BC", "#00ACC1", "#FF7043", "#9E9E9E", "#7E57C2", "#26A69A"], "kind": "donut", "labels": ["Paid Search", "Cross-network", "Organic Search", "Direct", "Unassigned", "Referral", "Organic Social"], "values": [143.0, 124.0, 48.0, 160.0, 2.0, 6.0, 0.0]}'></canvas>
+      <div style="
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%); text-align: center;">
+        <div style="font-size: 18px; font-weight: 700;">483</div>
+<div style="font-size: 10px; color: #9a9a9a;">Conversions</div>      </div>
+    </div>
+    <div class="legend">
+      <div class="row">
+        <span class="swatch" style="background: #4285F4;"></span>
+        <span class="name">Paid Search</span>
+        <span class="value">143</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #34A853;"></span>
+        <span class="name">Cross-network</span>
+        <span class="value">124</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #FBBC04;"></span>
+        <span class="name">Organic Search</span>
+        <span class="value">48</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #EA4335;"></span>
+        <span class="name">Direct</span>
+        <span class="value">160</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #AB47BC;"></span>
+        <span class="name">Unassigned</span>
+        <span class="value">2</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #00ACC1;"></span>
+        <span class="name">Referral</span>
+        <span class="value">6</span>
+      </div>
+      <div class="row">
+        <span class="swatch" style="background: #FF7043;"></span>
+        <span class="name">Organic Social</span>
+        <span class="value">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="band">Pages</div>
+<div class="data-table-wrap">
+<div class="head">Visar 10 av 19 sidor</div>  <table class="data-table">
+    <thead>
+      <tr>
+        <th>SIDA</th>
+<th>SESSIONS</th><th>TOTAL USERS</th><th>USER ENGAGEMENT</th><th>VIEWS</th><th>EVENT COUNT</th>      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>/</td>
+          <td>
+            870
+          </td>
+          <td>
+            693
+          </td>
+          <td>
+            36:14:47
+          </td>
+          <td>
+            3 646
+          </td>
+          <td>
+            13 149
+          </td>
+      </tr>
+      <tr>
+        <td>/stamplar</td>
+          <td>
+            172
+          </td>
+          <td>
+            168
+          </td>
+          <td>
+            08:55:25
+          </td>
+          <td>
+            713
+          </td>
+          <td>
+            3 057
+          </td>
+      </tr>
+      <tr>
+        <td>/checkout/cart</td>
+          <td>
+            89
+          </td>
+          <td>
+            62
+          </td>
+          <td>
+            04:15:28
+          </td>
+          <td>
+            277
+          </td>
+          <td>
+            1 094
+          </td>
+      </tr>
+      <tr>
+        <td>/stampel-for-keramik-tval-bakverk-x901019</td>
+          <td>
+            83
+          </td>
+          <td>
+            59
+          </td>
+          <td>
+            01:03:14
+          </td>
+          <td>
+            114
+          </td>
+          <td>
+            513
+          </td>
+      </tr>
+      <tr>
+        <td>/catalogsearch/result</td>
+          <td>
+            79
+          </td>
+          <td>
+            45
+          </td>
+          <td>
+            02:44:06
+          </td>
+          <td>
+            293
+          </td>
+          <td>
+            1 347
+          </td>
+      </tr>
+      <tr>
+        <td>/bordsflagga-sverige-24-x-16-cm-542524</td>
+          <td>
+            77
+          </td>
+          <td>
+            74
+          </td>
+          <td>
+            00:43:56
+          </td>
+          <td>
+            145
+          </td>
+          <td>
+            714
+          </td>
+      </tr>
+      <tr>
+        <td>/flaggor/nationsflaggor/vimplar</td>
+          <td>
+            73
+          </td>
+          <td>
+            70
+          </td>
+          <td>
+            01:41:09
+          </td>
+          <td>
+            193
+          </td>
+          <td>
+            902
+          </td>
+      </tr>
+      <tr>
+        <td>/flaggor/nationsflaggor/svenska-flaggor</td>
+          <td>
+            66
+          </td>
+          <td>
+            63
+          </td>
+          <td>
+            01:42:13
+          </td>
+          <td>
+            211
+          </td>
+          <td>
+            938
+          </td>
+      </tr>
+      <tr>
+        <td>/stamplar/bygg-stampel</td>
+          <td>
+            63
+          </td>
+          <td>
+            58
+          </td>
+          <td>
+            03:23:44
+          </td>
+          <td>
+            222
+          </td>
+          <td>
+            846
+          </td>
+      </tr>
+      <tr>
+        <td>/militarklamma-112022</td>
+          <td>
+            61
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            00:32:06
+          </td>
+          <td>
+            91
+          </td>
+          <td>
+            396
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<div class="takeaway takeaway--review">
+  <div class="takeaway__label">Sammanfattning</div>
+  <p class="takeaway__body">Maj 2026 genererade 4 278 användare och 5 842 sessioner, en ökning med +19,5 % respektive +22,6 % jämfört med maj 2025. Paid Search var den största trafikkanalen med 2 225 sessioner, följt av Cross-network med 1 792 sessioner. Engagement rate landade på 62,0 % och den genomsnittliga sessionslängden var 4 minuter och 6 sekunder, vilket visar att besökarna engagerar sig i webbplatsens innehåll.</p>
+</div>
+</div>
+  </div>
+</section>
+<section class="page">
+  <div class="wrap">
+    <div class="section" id="section-gsc" data-section-id="gsc" data-section-title="Google Search Console">
+  <div class="section-title">
+<img class="section-title__icon" src="../assets/icons/gsc.svg" alt="">    <span>Google Search Console</span>
+  </div>
+
+
+    <div class="band">Organic traffic</div>
+<div class="card-grid card-grid--asym"><div class="card card--icon"><img src="../assets/icons/gsc.svg" alt="Search Console"></div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/gsc.svg" alt="">      Avg Position
+    </div>
+      <span class="trend trend--down">-37% YoY</span>
+  </div>
+    <div class="card__value card__value--big">18.4</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/gsc.svg" alt="">      Clicks
+    </div>
+      <span class="trend trend--up">+32% YoY</span>
+  </div>
+    <div class="card__value card__value--big">1 063</div>
+</div></div>
+<div class="chart-card">
+  <div class="chart-card__head">
+    <span>Impressions</span>
+    <span class="right">
+<span class="value">104 595</span>        <span class="trend trend--down">-16% YoY</span>
+    </span>
+  </div>
+  <div class="chart-wrap">
+    <canvas id="gsc-imp-7" data-cyntora='{"kind": "line", "labels": ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06", "05-07", "05-08", "05-09", "05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-24", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30"], "legend": true, "series": [{"color": "#1f4e4a", "label": "Maj 2026", "values": [2412, 2600, 2943, 3291, 3779, 3692, 3546, 3523, 3107, 5154, 4040, 4083, 3627, 3122, 2900, 3042, 3204, 3924, 3725, 3487, 3549, 3211, 2871, 3373, 4107, 4118, 4134, 3891, 3259, 2881]}, {"color": "#b9d2cf", "label": "Maj 2025", "values": [3588, 3959, 3497, 3758, 4190, 4149, 4344, 4083, 3706, 3495, 3638, 4316, 4684, 4140, 3965, 3831, 3946, 3410, 4017, 3682, 3910, 4377, 3694, 3360, 3831, 4962, 4816, 4334, 4109, 4245, 4161]}]}'></canvas>
+  </div>
+</div>
+
+<div class="band">Keywords</div>
+<div class="data-table-wrap">
+<div class="head">Showing 10 of 15 Rows</div>  <table class="data-table">
+    <thead>
+      <tr>
+        <th>KEYWORD</th>
+<th>CLICKS</th><th>IMPRESSIONS</th><th>AVG POSITION</th><th>CTR</th>      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>namnbricka</td>
+          <td>
+            3
+          </td>
+          <td>
+            1 122
+          </td>
+          <td>
+            5.45
+          </td>
+          <td>
+            0.27%
+          </td>
+      </tr>
+      <tr>
+        <td>stämpelfabriken</td>
+          <td>
+            60
+          </td>
+          <td>
+            730
+          </td>
+          <td>
+            1.78
+          </td>
+          <td>
+            8.22%
+          </td>
+      </tr>
+      <tr>
+        <td>stämpel</td>
+          <td>
+            8
+          </td>
+          <td>
+            531
+          </td>
+          <td>
+            7.32
+          </td>
+          <td>
+            1.51%
+          </td>
+      </tr>
+      <tr>
+        <td>namnskylt militärklämma</td>
+          <td>
+            4
+          </td>
+          <td>
+            200
+          </td>
+          <td>
+            8.24
+          </td>
+          <td>
+            2.00%
+          </td>
+      </tr>
+      <tr>
+        <td>stämpelfabriken linköping</td>
+          <td>
+            29
+          </td>
+          <td>
+            122
+          </td>
+          <td>
+            1.02
+          </td>
+          <td>
+            23.77%
+          </td>
+      </tr>
+      <tr>
+        <td>militärklämma</td>
+          <td>
+            5
+          </td>
+          <td>
+            94
+          </td>
+          <td>
+            2.48
+          </td>
+          <td>
+            5.32%
+          </td>
+      </tr>
+      <tr>
+        <td>vimpelskydd</td>
+          <td>
+            4
+          </td>
+          <td>
+            86
+          </td>
+          <td>
+            4.81
+          </td>
+          <td>
+            4.65%
+          </td>
+      </tr>
+      <tr>
+        <td>servicestämpel</td>
+          <td>
+            4
+          </td>
+          <td>
+            79
+          </td>
+          <td>
+            5.99
+          </td>
+          <td>
+            5.06%
+          </td>
+      </tr>
+      <tr>
+        <td>äggstämpel</td>
+          <td>
+            9
+          </td>
+          <td>
+            64
+          </td>
+          <td>
+            1.33
+          </td>
+          <td>
+            14.06%
+          </td>
+      </tr>
+      <tr>
+        <td>linköpings stämpelfabrik</td>
+          <td>
+            16
+          </td>
+          <td>
+            51
+          </td>
+          <td>
+            1.00
+          </td>
+          <td>
+            31.37%
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="takeaway takeaway--positive">
+  <div class="takeaway__label">Sammanfattning</div>
+  <p class="takeaway__body">Organisk synlighet stärktes under maj med 1 063 klick (+32,4 % jämfört med maj 2025) och en CTR om 1,0 %, trots att antalet visningar sjönk med 15,8 % till 104 595. Den genomsnittliga sökpositionen förbättrades från 29,4 till 18,4, ett tydligt tecken på att webbplatsen rankar högre för fler relevanta söktermer. De mest klickade söktermerna inkluderade 'stämpelfabriken' (60 klick), 'stämpelfabriken linköping' (29 klick) och 'äggstämpel' (9 klick).</p>
+</div>
+</div>
+  </div>
+</section>
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-google_ads" data-section-id="google_ads" data-section-title="Google Ads">
+  <div class="section-title">
+<img class="section-title__icon" src="../assets/icons/google-ads.svg" alt="">    <span>Google Ads</span>
+  </div>
+
+
+    <div class="band">SEM</div><div class="source-attr">Spårat konverteringsvärde är baserat på konverteringshändelser konfigurerade i Google Ads-kontot. Använd Konverteringar och Kostnad som primära indikatorer.</div>
+<div class="card-grid"><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Konverteringar
+    </div>
+      <span class="trend trend--down">-14% YoY</span>
+  </div>
+    <div class="card__value card__value--big">70</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Spårat konv.värde
+    </div>
+      <span class="trend trend--up">+7% YoY</span>
+  </div>
+    <div class="card__value card__value--big">69 K kr</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Spårad ROAS
+    </div>
+      <span class="trend trend--up">+68% YoY</span>
+  </div>
+    <div class="card__value card__value--big">2.61</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Kostnad
+    </div>
+      <span class="trend trend--down">-36% YoY</span>
+  </div>
+    <div class="card__value card__value--big">27 K kr</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Exponeringar
+    </div>
+      <span class="trend trend--down">-8% YoY</span>
+  </div>
+    <div class="card__value card__value--big">136 970</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Klick
+    </div>
+      <span class="trend trend--down">-17% YoY</span>
+  </div>
+    <div class="card__value card__value--big">2 277</div>
+</div><div class="card">
+  <div class="card__head">
+    <div class="label">
+<img src="../assets/icons/google-ads.svg" alt="">      Klickfrekvens
+    </div>
+      <span class="trend trend--down">-10% YoY</span>
+  </div>
+    <div class="card__value card__value--big">1.66%</div>
+</div></div>
+<div class="chart-card">
+  <div class="chart-card__head">
+    <span>Kostnad vs spårat konv.värde</span>
+    <span class="right">
+    </span>
+  </div>
+  <div class="chart-wrap">
+    <canvas id="ads-spend-8" data-cyntora='{"currency": "SEK", "dual_axis": true, "format": "currency", "kind": "line", "labels": ["1 May", "2 May", "3 May", "4 May", "5 May", "6 May", "7 May", "8 May", "9 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"], "series": [{"color": "#1f4e4a", "currency": "SEK", "format": "currency", "label": "Kostnad", "values": [195.73, 262.92, 466.07, 1208.57, 1424.47, 1703.96, 1255.79, 1195.6, 199.13, 503.69, 1280.07, 1139.49, 1325.81, 517.82, 715.13, 259.04, 457.33, 1489.02, 1067.75, 1485.48, 1194.03, 958.94, 79.65, 275.68, 1326.68, 907.12, 1175.84, 911.77, 900.29, 321.11, 347.5]}, {"color": "#b9d2cf", "currency": "SEK", "format": "currency", "label": "Sp\u00e5rat konv.v\u00e4rde", "values": [2336.63, 252.0, 1042.36, 3944.0, 3130.52, 7139.0, 2315.0, 3315.0, 651.0, 914.0, 805.0, 6451.0, 1118.0, 3570.0, 1068.0, 0.0, 0.0, 2698.0, 429.0, 1845.5, 4055.0, 0.0, 0.0, 400.0, 2697.0, 0.0, 12702.0, 3710.0, 2604.0, 0.0, 0.0]}]}'></canvas>
+  </div>
+</div>
+<div class="band">Top Campaigns</div>
+<div class="data-table-wrap">
+<div class="head">Showing 5 of 5 Rows</div>  <table class="data-table">
+    <thead>
+      <tr>
+        <th>KAMPANJ</th>
+<th>KOSTNAD</th><th>KONVERTERINGAR</th><th>SPÅRAT KONV.VÄRDE</th><th>ROAS</th><th>EXPONERINGAR</th><th>KLICK</th>      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PMAX | Stämpelfabriken | Topprodukter</td>
+          <td>
+            10 K kr
+          </td>
+          <td>
+            24
+          </td>
+          <td>
+            21 K kr
+          </td>
+          <td>
+            2,15
+          </td>
+          <td>
+            38 804
+          </td>
+          <td>
+            797
+          </td>
+      </tr>
+      <tr>
+        <td>PMAX | Stämpelfabriken | Stämplar  </td>
+          <td>
+            7 K kr
+          </td>
+          <td>
+            14
+          </td>
+          <td>
+            15 K kr
+          </td>
+          <td>
+            2,27
+          </td>
+          <td>
+            30 434
+          </td>
+          <td>
+            501
+          </td>
+      </tr>
+      <tr>
+        <td>Sök: Branding Stämpelfabriken</td>
+          <td>
+            5 K kr
+          </td>
+          <td>
+            9
+          </td>
+          <td>
+            12 K kr
+          </td>
+          <td>
+            2,59
+          </td>
+          <td>
+            587
+          </td>
+          <td>
+            168
+          </td>
+      </tr>
+      <tr>
+        <td>PMAX | Stämpelfabriken | Resterande produkter</td>
+          <td>
+            4 K kr
+          </td>
+          <td>
+            20
+          </td>
+          <td>
+            21 K kr
+          </td>
+          <td>
+            5,15
+          </td>
+          <td>
+            66 730
+          </td>
+          <td>
+            728
+          </td>
+      </tr>
+      <tr>
+        <td>Sök: Offertkategori</td>
+          <td>
+            1 K kr
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            0,00 kr
+          </td>
+          <td>
+            0,00
+          </td>
+          <td>
+            415
+          </td>
+          <td>
+            83
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="takeaway takeaway--neutral">
+  <div class="takeaway__label">Sammanfattning</div>
+  <p class="takeaway__body">Google Ads genererade ett spårat konverteringsvärde om 69 192 SEK med en total kostnad på 26 551 SEK, vilket ger en ROAS på 2,61 - en förbättring med +68,5 % jämfört med maj 2025. Kostnaden minskade med 36,5 % jämfört med föregående år, medan konverteringsvärdet ökade med 7,0 %, vilket innebär att varje investerad krona genererade mer värde. Kampanjerna nådde 136 970 visningar och 2 277 klick under månaden, och spårade konverteringsvärden bör ses som ett komplement till faktisk omsättning i webbshopen.</p>
+</div>
+</div>
+  </div>
+</section>
+
+<section class="page page--dark" id="section-next-steps" data-section-id="next-steps" data-section-title="Vad vi gör härnäst">
+  <div class="wrap">
+    <div class="eyebrow">Vad händer härnäst</div>
+    <div class="next-steps">
+      <h2>Vad vi gör härnäst</h2>
+      <ul>
+<li>Vi kommer att analysera Bounce Rate-ökningen per kanal och justera landningssidor och annonsgrupper för Paid Search-trafiken för att förbättra engagement rate och sänka studstakten.</li><li>Vi kommer att fortsätta optimera PMAX-kampanjerna med fokus på produktgruppen Stämplar och Topprodukter, som tillsammans stod för merparten av konverteringsvärdet under månaden.</li><li>Vi kommer att granska sökordspositioner för de nyckelord som förbättrades mest i maj - bland annat 'namnbricka' (position 4) och 'konteringsstämplar' (position 2) - och identifiera möjligheter att stärka sidorna ytterligare.</li><li>Vi kommer att följa upp CTR-utvecklingen i Search Console för de söktermer med hög exponeringsvolym men låg klickfrekvens, och justera metabeskrivningar och titlar där det ger störst effekt.</li>      </ul>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
